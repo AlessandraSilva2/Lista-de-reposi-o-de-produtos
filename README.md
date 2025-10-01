@@ -47,11 +47,12 @@ Estrutura do Projeto
 Como Rodar Localmente
 Clone este repositório:
 
-```bash
-git clone https://github.com/AlessandraSilva2/Lista-de-reposi-o-de-produtos.git
-
 Licença
 
 Este projeto está licenciado sob os termos da Licença MIT.  
 Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
+```bash
+git clone https://github.com/AlessandraSilva2/Lista-de-reposi-o-de-produtos.git
+
 
