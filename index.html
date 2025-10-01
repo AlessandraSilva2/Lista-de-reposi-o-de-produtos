@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Reposição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Reposição</h1>
+    </header>
+
+    <main>
+        <!-- Etapa 1: Selecionar empreendimento -->
+        <div id="etapa1" class="card">
+            <h3>Qual é o seu empreendimento?</h3>
+            <select id="empreendimento">
+                <option value="">-- Selecione --</option>
+                <option value="farmacia">Farmácia</option>
+                <option value="refrigeracao">Refrigeração</option>
+            </select>
+
+            <button id="btnContinuar">Continuar</button>
+        </div>
+
+        <!-- Etapa 2: Selecionar produtos -->
+        <div id="etapa2" class="card hidden">
+            <div class="top-actions">
+                <button class="small" id="btnVoltar">⬅ Voltar</button>
+                <button class="small" id="btnResetar">🔄 Resetar Quantidades</button>
+            </div>
+            <h3>Selecione os produtos e quantidades:</h3>
+            <div id="lista-produtos"></div>
+            <button class="gerar" id="btnGerar">✅ Gerar Lista</button>
+        </div>
+
+        <div id="etapa3" class="card hidden">
+            <h3>Lista Final:</h3>
+            <textarea id="resultado" readonly></textarea>
+            <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+                <button class="small" id="btnVoltarLista">⬅ Voltar para Lista</button>
+                <button class="copiar" id="btnCopiar">📋 Copiar Lista</button>
+                <button class="small" id="btnNova">🆕 Nova Lista</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
